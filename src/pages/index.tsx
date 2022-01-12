@@ -5,6 +5,7 @@ import Navbar from '@components/Navbar';
 import Header from '@components/Header';
 import Features from '@components/Features';
 import Panels from '@components/Panels';
+import Support from '@components/Support';
 import Footer from '@components/Footer';
 
 const Home: NextPage = () => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Header />
       <Features />
       <Panels />
+      <Support />
       <Footer />
     </>
   );

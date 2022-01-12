@@ -10,7 +10,6 @@ export default function Panels() {
       w="full"
       justifyContent="center"
       alignItems="center"
-      pos="absolute"
     >
       <Box
         shadow="xl"
