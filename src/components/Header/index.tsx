@@ -6,8 +6,8 @@ export default function Header() {
       <Box bg={'url("header.jpg")'} bgSize={'cover'}>
         <Box
           bg={useColorModeValue(
-            'linear-gradient(to left, rgb(128, 90, 213, 0.5), rgba(68, 51, 122, 0.9))',
-            'linear-gradient(to left, ,rgb(45, 55, 72 0.5), rgba(26, 32, 44, 0.9))',
+            'linear-gradient(to left, rgba(128, 90, 213, 0.5), rgba(68, 51, 122, 0.9))',
+            'linear-gradient(to left, rgba(45, 55, 72, 0.5), rgba(26, 32, 44, 0.9))',
           )}
         >
           <Container maxW={'2xl'}>
