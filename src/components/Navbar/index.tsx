@@ -222,7 +222,7 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
         </Text>
         {children && (
           <Icon
-            color={useColorModeValue('gray.200', 'gray.200')}
+            color={'gray.200'}
             _hover={{color: 'white'}}
             as={ChevronDownIcon}
             transition={'all .25s ease-in-out'}
