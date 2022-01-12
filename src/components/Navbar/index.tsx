@@ -238,7 +238,7 @@ const MobileNavItem = ({label, children, href}: NavItem) => {
           {children &&
             children.map(child => (
               <Link
-                color={useColorModeValue('gray.200', 'gray.200')}
+                color={'gray.200'}
                 _hover={{color: 'white'}}
                 key={child.label}
                 py={2}
