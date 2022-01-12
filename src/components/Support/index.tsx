@@ -4,7 +4,7 @@ import {chakra, Box, useColorModeValue, Flex, Button, HStack} from '@chakra-ui/r
 export default function Support() {
   return (
     <Flex px={4} py={32} mx="auto">
-      <Box w="full" mx="auto" w={{lg: 8 / 12, xl: 5 / 12}} data-aos="flip-up">
+      <Box w="full" mx="auto" width={{lg: 8 / 12, xl: 5 / 12}} data-aos="flip-up">
         <chakra.p
           mb={2}
           fontSize="xs"
