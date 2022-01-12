@@ -4,7 +4,8 @@ import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Header from '@components/Header';
 import Features from '@components/Features';
-import FeaturesServices from '@components/FeaturesServices';
+import Panels from '@components/Panels';
+import Footer from '@components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,8 @@ const Home: NextPage = () => {
       <Navbar />
       <Header />
       <Features />
-      <FeaturesServices />
+      <Panels />
+      <Footer />
     </>
   );
 };

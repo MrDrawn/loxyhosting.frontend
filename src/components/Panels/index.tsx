@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Box, Button, Flex, Image, SimpleGrid, Text, useColorModeValue} from '@chakra-ui/react';
 
-export default function FeaturesServices() {
+export default function Panels() {
   return (
     <Flex
       bg={useColorModeValue('gray.100', 'gray.700')}
@@ -60,7 +60,15 @@ export default function FeaturesServices() {
             </Button>
           </Box>
           <Box width={'100%'} py={3} px={3} bg={useColorModeValue('gray.200', 'gray.700')}>
-            <Image src={'control-panel-host.png'} />
+            <Image
+              src={'control-panel-host.png'}
+              borderRadius={'3px'}
+              userSelect={'none'}
+              onDragStart={event => event.preventDefault()}
+              _hover={{
+                transform: 'scale(1.01)',
+              }}
+            />
           </Box>
         </SimpleGrid>
         <SimpleGrid
@@ -104,7 +112,15 @@ export default function FeaturesServices() {
             </Button>
           </Box>
           <Box width={'100%'} py={3} px={3} bg={useColorModeValue('gray.200', 'gray.700')}>
-            <Image src={'control-panel-vps.png'} />
+            <Image
+              src={'control-panel-vps.png'}
+              borderRadius={'3px'}
+              userSelect={'none'}
+              onDragStart={event => event.preventDefault()}
+              _hover={{
+                transform: 'scale(1.01)',
+              }}
+            />
           </Box>
         </SimpleGrid>
       </Box>
