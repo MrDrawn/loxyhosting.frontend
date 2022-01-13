@@ -66,6 +66,7 @@ export default function Navbar() {
             userSelect={'none'}
             onDragStart={event => event.preventDefault()}
             onClick={() => router.push('/')}
+            alt={process.env.name}
           />
 
           <Flex display={{base: 'none', md: 'flex'}} ml={10}>

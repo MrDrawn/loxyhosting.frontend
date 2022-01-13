@@ -41,6 +41,7 @@ export default function Footer() {
                 userSelect={'none'}
                 onDragStart={event => event.preventDefault()}
                 onClick={() => router.push('/')}
+                alt={process.env.name}
               />
             </Box>
             <Text fontSize={'sm'}>

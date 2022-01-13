@@ -36,6 +36,7 @@ export default function Locations() {
                   width={'40px'}
                   userSelect={'none'}
                   onDragStart={event => event.preventDefault()}
+                  alt="Estados Unidos"
                 />
                 <Text fontSize={'20px'} fontWeight={'700'}>
                   Estados Unidos

@@ -67,6 +67,7 @@ export default function Panels() {
               _hover={{
                 transform: 'scale(1.01)',
               }}
+              alt="Painel da Hospedagem"
             />
           </Box>
         </SimpleGrid>
@@ -119,6 +120,7 @@ export default function Panels() {
               _hover={{
                 transform: 'scale(1.01)',
               }}
+              alt="Painel da VPS"
             />
           </Box>
         </SimpleGrid>
