@@ -3,7 +3,7 @@ import type {NextPage} from 'next';
 import Head from 'next/head';
 import Navbar from '@components/Navbar';
 import Header from '@components/Header';
-import Features from '@components/Features';
+import Why from '@components/Why';
 import Panels from '@components/Panels';
 import Avaliations from '@components/Avaliations';
 import Support from '@components/Support';
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Header />
-      <Features />
+      <Why />
       <Panels />
       <Avaliations />
       <Support />

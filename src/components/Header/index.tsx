@@ -1,6 +1,10 @@
 import {Box, Container, Text, Button, Stack, useColorModeValue} from '@chakra-ui/react';
 
+import {useRouter} from 'next/router';
+
 export default function Header() {
+  const router = useRouter();
+
   return (
     <>
       <Box bg={'url("header.jpg")'} bgSize={'cover'}>
@@ -39,7 +43,12 @@ export default function Header() {
                 alignSelf={'center'}
                 position={'relative'}
               >
-                <Button colorScheme={'purple'} rounded={'full'} px={6}>
+                <Button
+                  colorScheme={'purple'}
+                  rounded={'full'}
+                  px={6}
+                  onClick={() => router.push('#why')}
+                >
                   Por que a {process.env.name}?
                 </Button>
               </Stack>

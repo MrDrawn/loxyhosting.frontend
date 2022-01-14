@@ -4,7 +4,7 @@ import {chakra, Box, Flex, useColorModeValue, Icon, Stack} from '@chakra-ui/reac
 
 import {MdCheckCircleOutline, MdDesktopWindows, MdOutlineShield, MdSupport} from 'react-icons/md';
 
-export default function C2g() {
+export default function Why() {
   const Feature = props => {
     return (
       <Flex>
@@ -47,7 +47,7 @@ export default function C2g() {
   };
 
   return (
-    <Box py={12} bg={useColorModeValue('white', 'gray.800')} data-aos="fade-up">
+    <Box py={12} bg={useColorModeValue('white', 'gray.800')} data-aos="fade-up" id={'why'}>
       <Box maxW={'container.xl'} mx="auto" px={{base: 4, lg: 8}}>
         <Box textAlign={{lg: 'center'}}>
           <chakra.h2
