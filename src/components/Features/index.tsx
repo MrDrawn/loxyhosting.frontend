@@ -48,7 +48,7 @@ export default function C2g() {
 
   return (
     <Box py={12} bg={useColorModeValue('white', 'gray.800')} data-aos="fade-up">
-      <Box maxW="7xl" mx="auto" px={{base: 4, lg: 8}}>
+      <Box maxW={'container.xl'} mx="auto" px={{base: 4, lg: 8}}>
         <Box textAlign={{lg: 'center'}}>
           <chakra.h2
             color={useColorModeValue('brand.600', 'brand.600')}

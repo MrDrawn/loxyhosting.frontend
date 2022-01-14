@@ -2,23 +2,23 @@ import type {NextPage} from 'next';
 
 import Head from 'next/head';
 import Navbar from '@components/Navbar';
-import Header from '@components/Header';
-import Features from '@components/Features';
-import Panels from '@components/Panels';
+import Header from '@components/About/Header';
+import Statistics from '@components/About/Statistics';
+import Features from '@components/About/Features';
 import Avaliations from '@components/Avaliations';
 import Support from '@components/Support';
 import Footer from '@components/Footer';
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{process.env.name} - Qualidade e preço acessível</title>
+        <title>{process.env.name} - Sobre</title>
       </Head>
       <Navbar />
       <Header />
+      <Statistics />
       <Features />
-      <Panels />
       <Avaliations />
       <Support />
       <Footer />
@@ -26,4 +26,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;

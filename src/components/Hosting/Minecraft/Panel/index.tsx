@@ -4,8 +4,9 @@ import {Box, Button, Flex, Image, SimpleGrid, Text, useColorModeValue} from '@ch
 
 import {useRouter} from 'next/router';
 
-export default function Panels() {
+export default function Panel() {
   const router = useRouter();
+
   return (
     <Flex
       bg={useColorModeValue('gray.100', 'gray.700')}
@@ -25,7 +26,6 @@ export default function Panels() {
         <SimpleGrid
           alignItems="start"
           columns={{base: 1, md: 2}}
-          mb={24}
           spacingY={{base: 10, md: 32}}
           spacingX={{base: 10, md: 24}}
         >
@@ -39,7 +39,7 @@ export default function Panels() {
               color={useColorModeValue('gray.900', 'gray.400')}
               lineHeight={{md: 'shorter'}}
             >
-              Painel de Hospedagens
+              Painel de Minecraft
             </Text>
             <Text
               mb={5}
@@ -47,8 +47,8 @@ export default function Panels() {
               color={useColorModeValue('gray.600', 'gray.400')}
               fontSize={{md: 'lg'}}
             >
-              Nosso painel de Hospedagem possui diversas funções para você gerenciar de forma
-              simples e eficiente seu serviço.
+              Nosso painel de Hospedagem Minecraft possui diversas funções para você gerenciar de
+              forma simples e eficiente seu serviço.
             </Text>
             <Button w={{base: 'full', sm: 'auto'}} size="lg" onClick={() => router.push('/about')}>
               Ler mais
@@ -64,52 +64,6 @@ export default function Panels() {
                 transform: 'scale(1.01)',
               }}
               alt="Painel da Hospedagem"
-            />
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid
-          alignItems="center"
-          columns={{base: 1, md: 2}}
-          flexDirection="column-reverse"
-          mb={24}
-          spacingY={{base: 10, md: 32}}
-          spacingX={{base: 10, md: 24}}
-        >
-          <Box order={{base: 'none', md: 2}}>
-            <Text
-              mb={4}
-              fontSize={{base: '2xl', md: '4xl'}}
-              fontWeight="extrabold"
-              letterSpacing="tight"
-              textAlign={{base: 'center', md: 'left'}}
-              color={useColorModeValue('gray.900', 'gray.400')}
-              lineHeight={{md: 'shorter'}}
-            >
-              Painel de VPS
-            </Text>
-            <Text
-              mb={5}
-              textAlign={{base: 'center', sm: 'left'}}
-              color={useColorModeValue('gray.600', 'gray.400')}
-              fontSize={{md: 'lg'}}
-            >
-              Nosso painel de VPS possui diversas funções para você gerenciar de forma simples e
-              eficiente seu serviço.
-            </Text>
-            <Button w={{base: 'full', sm: 'auto'}} size="lg" onClick={() => router.push('/about')}>
-              Ler mais
-            </Button>
-          </Box>
-          <Box width={'100%'} py={3} px={3} bg={useColorModeValue('gray.200', 'gray.700')}>
-            <Image
-              src={'control-panel-vps.png'}
-              borderRadius={'3px'}
-              userSelect={'none'}
-              onDragStart={event => event.preventDefault()}
-              _hover={{
-                transform: 'scale(1.01)',
-              }}
-              alt="Painel da VPS"
             />
           </Box>
         </SimpleGrid>

@@ -5,11 +5,12 @@ import Navbar from '@components/Navbar';
 import Header from '@components/Hosting/Minecraft/Header';
 import Locations from '@components/Hosting/Minecraft/Locations';
 import Plans from '@components/Hosting/Minecraft/Plans';
-import Panels from '@components/Panels';
+import Panel from '@components/Hosting/Minecraft/Panel';
+import Faqs from '@components/Hosting/Minecraft/Faqs';
 import Support from '@components/Support';
 import Footer from '@components/Footer';
 
-const Home: NextPage = () => {
+const Minecraft: NextPage = () => {
   return (
     <>
       <Head>
@@ -19,11 +20,12 @@ const Home: NextPage = () => {
       <Header />
       <Locations />
       <Plans />
-      <Panels />
+      <Panel />
+      <Faqs />
       <Support />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Minecraft;

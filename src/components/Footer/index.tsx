@@ -51,7 +51,7 @@ export default function Footer() {
           <Stack align={'flex-start'}>
             <ListHeader>Serviços</ListHeader>
             <Link onClick={() => router.push('/hosting/minecraft')}>Host de Minecraft</Link>
-            <Link onClick={() => router.push('/hosting/bots')}>Host de Bots</Link>
+            <Link onClick={() => router.push('/hosting/bot')}>Host de Bots</Link>
             <Link onClick={() => router.push('/servers/vps')}>Servidores VPS</Link>
           </Stack>
           <Stack align={'flex-start'}>
